@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <style>
+        body {
+            font-family: 'Poppins', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e0f7fa;
+            color: #333;
+            background-image: url('GROUP 3/img/Pic3.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            overflow: auto;
+        }
+        header {
+            background: #74a36b;
+            color: white;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.2rem;
+            text-align: center;
+        }
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+        }
+        section {
+            margin-bottom: 30px;
+            padding: 20px;
+            background: #a6e999;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            opacity: 0;
+            animation: fadeIn 2s ease-in-out forwards;
+        }
+        h2 {
+            color: #000000;
+        }
+        footer {
+            text-align: center;
+            padding: 1rem 0;
+            background: #74a36b;
+            color: white;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        footer p {
+            margin: 0;
+        }
+        .team {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+        .team-member {
+            flex: 1 1 calc(20% - 20px);
+            box-sizing: border-box;
+            text-align: center;
+        }
+        .team-member img {
+            border-radius: 50%;
+            width: 120px;
+            height: 120px;
+            object-fit: cover;
+            margin-bottom: 10px;
+        }
+        .team-member h3 {
+            margin: 10px 0 5px;
+            font-size: 1.1em;
+        }
+        .team-member p {
+            font-size: 0.9em;
+            color: #000000;
+        }
+        nav {
+            display: flex;
+            gap: 0.5rem;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 1rem;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        nav a:hover {
+            background-color: rgba(255, 255, 255, 0.3);
+        }
+        .spacer {
+            height: 80px;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+    </style>
+    <link rel="icon" type="image/png" href="GROUP 3/img/icon.png">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="Index.html">Home</a>
+            <a href="About.html">About</a>
+            <a href="Programs.html">Programs</a>
+            <a href="Contact.html">Contact</a>
+            <a href="Donation.html">Get Involved</a>
+            <a href="Documentation.html">Video</a>
+
+        </nav>
+        <h1>A Community Outreach Program</h1>
+    </header>
+
+    <div class="container">
+        <section>
+            <h2>About the Project 🛠️</h2>
+            <p>This project aims to show our Canteen workers that even if we don't show it often, we still appreciate all that they do for us. This day will give our staff a break and a fun day to celebrate their achievements, and also give us an opportunity to spend time with them. This also gives us a way of getting closer to them through fun activities and food! 🎉</p>
+        </section>
+
+        <section>
+            <h2>Our Goals 🎯</h2>
+            <p>Show our appreciation to them 🙌</p>
+            <p>Making them happy and treasuring their contributions 💎</p>
+            <p>Build a stronger bond with them as students and show how valuable their work is for other people 🔗</p>
+        </section>
+
+        <section>
+            <h2>Meet the Team 🧒</h2>
+            <div class="team">
+                <div class="team-member">
+                    <img src="GROUP 3/img/Gavino.jpg" alt="Kurt Gavino">
+                    <h3>Kurt Gavino</h3>
+                    <p>Member</p>
+                </div>
+                <div class="team-member">
+                    <img src="GROUP 3/img/Fernandez.jpg" alt="Gavin Fernandez">
+                    <h3>Gavin Fernandez</h3>
+                    <p>Member</p>
+                </div>
+                <div class="team-member">
+                    <img src="GROUP 3/img/Dy Echo.jpg" alt="Lance Dy Echo">
+                    <h3>Lance Dy Echo</h3>
+                    <p>Leader</p>
+                </div>
+                <div class="team-member">
+                    <img src="GROUP 3/img/Labasan.jpg" alt="Cyrus Labasan">
+                    <h3>Cyrus Labasan</h3>
+                    <p>Member</p>
+                </div>
+                <div class="team-member">
+                    <img src="GROUP 3/img/Riyoshi.jpg" alt="Riyoshi Santos">
+                    <h3>Riyoshi Santos</h3>
+                    <p>Member</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <div class="spacer"></div>
+
+    <footer>
+        <p>&copy; 2024 Marist School | All Rights Reserved</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Involved</title>
+    <style>
+        body {
+            font-family: 'Poppins', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+            background-image: url('GROUP 3/img/Pic6.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+        .container {
+            width: 70%;
+            max-width: 600px;
+            margin: 2rem auto;
+            padding: 1rem;
+            background: rgba(166, 233, 153, 0.9);
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+            opacity: 0;
+            animation: fadeIn 2s ease-in-out forwards;
+        }
+        .container h2 {
+            font-size: 1.8rem;
+            text-align: center;
+            margin-bottom: 0.3rem;
+            color: #000000;
+        }
+        .container p {
+            text-align: center;
+            margin-top: 0;
+        }
+        .form-group {
+            margin-bottom: 0.8rem;
+        }
+        .form-group label {
+            font-size: 0.9rem;
+            font-weight: bold;
+            color: #000000;
+            margin-bottom: 0.3rem;
+            display: block;
+        }
+        .form-group input, 
+        .form-group select, 
+        .form-group textarea {
+            width: 100%;
+            padding: 0.6rem;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 0.9rem;
+            box-sizing: border-box;
+        }
+        .form-group textarea {
+            resize: none;
+        }
+        .form-group input[type="submit"] {
+            background-color: #80b577;
+            color: white;
+            cursor: pointer;
+            border: none;
+            font-size: 1rem;
+            font-weight: bold;
+            padding: 0.8rem;
+            transition: background-color 0.3s ease;
+            margin-top: 0.5rem;
+        }
+        .form-group input[type="submit"]:hover {
+            background-color: #74a36b;
+        }
+        footer {
+            text-align: center;
+            padding: 1rem 0;
+            background: #74a36b;
+            color: white;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        footer p {
+            margin: 0;
+        }
+        nav {
+            display: flex;
+            gap: 0.5rem;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 1rem;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        nav a:hover {
+            background-color: rgba(255, 255, 255, 0.3);
+        }
+        header {
+            background: #74a36b;
+            color: white;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.2rem;
+            text-align: center;
+        }
+        .spacer {
+            height: 80px;
+        }
+        .how-you-can-help {
+            background: #74a36b;
+            color: rgb(0, 0, 0);
+            padding: 1rem;
+            text-align: center;
+            border-radius: 5px;
+            width: 80%;
+            max-width: 600px;
+            margin: 2rem auto;
+            border: 1px solid #000000;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            opacity: 0;
+            animation: fadeIn 2s ease-in-out forwards;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+    </style>
+    <link rel="icon" type="image/png" href="GROUP 3/img/icon.png">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="Index.html">Home</a>
+            <a href="About.html">About</a>
+            <a href="Programs.html">Programs</a>
+            <a href="Contact.html">Contact</a>
+            <a href="Donation.html">Get Involved</a>
+            <a href="Documentation.html">Video</a>
+
+        </nav>
+        <h1>A Community Outreach Program</h1>
+    </header>    
+
+    <section class="how-you-can-help">
+        <h1 style="margin: 0; font-size: 1.8rem;">How You Can Help! 🤝</h1>
+    </section>
+
+    <div class="container">
+        <h2>DONATE NOW</h2>
+        <p>You aren't forced, but making a donation will be able to help us do more and make our program better, please fill out the form below to make a donation.</p>
+
+        <form id="donationForm">
+            <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" required placeholder="Enter your full name">
+            </div>
+            
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" required placeholder="Enter your email">
+            </div>
+            
+            <div class="form-group">
+                <label for="donation_amount">Donation Amount</label>
+                <input type="number" id="donation_amount" name="donation_amount" required placeholder="Enter donation amount" min="1">
+            </div>
+
+            <div class="form-group">
+                <label for="currency">Currency</label>
+                <select id="currency" name="currency" required>
+                    <option value="USD">USD</option>
+                    <option value="EUR">EUR</option>
+                    <option value="PHP">PHP</option>
+                    <option value="GBP">GBP</option>
+                    <option value="JPY">JPY</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="donation_method">Donation Method</label>
+                <select id="donation_method" name="donation_method" required>
+                    <option value="credit_card">Credit Card</option>
+                    <option value="paypal">PayPal</option>
+                    <option value="bank_transfer">Bank Transfer</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="message">Message (Optional)</label>
+                <textarea id="message" name="message" rows="4" placeholder="Write a message (optional)"></textarea>
+            </div>
+
+            <div class="form-group">
+                <input type="submit" value="Donate Now">
+            </div>
+        </form>
+
+        <p id="confirmationMessage" style="display:none; color: green; font-weight: bold; text-align: center; margin-top: 1rem;">Donation sent! Thank you!</p>
+    </div>
+
+    <div class="spacer"></div>
+
+    <footer>
+        <p>&copy; 2024 Marist School | All Rights Reserved</p>
+    </footer>
+
+    <script>
+        const donationForm = document.getElementById('donationForm');
+        const confirmationMessage = document.getElementById('confirmationMessage');
+
+        donationForm.addEventListener('submit', function(event) {
+            event.preventDefault();
+            donationForm.reset();
+            confirmationMessage.style.display = 'block';
+        });
+    </script>
+</body>
+</html>

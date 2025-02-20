@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appreciation Program</title>
+    <style>
+        body {
+            font-family: 'Poppins', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e0f7fa;
+            color: #333;
+            overflow: auto;
+        }
+        header {
+            background: #74a36b;
+            color: white;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.2rem;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            gap: 0.5rem;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 1rem;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        nav a:hover {
+            background-color: rgba(255, 255, 255, 0.3);
+        }
+        .hero {
+            text-align: center;
+            padding: 2rem 1rem;
+            background-image: url('GROUP 3/img/Pic1.jpg');
+            background-size: cover;
+            background-position: center;
+            color: black;
+            animation: fadeIn 2s ease-in-out;
+            position: relative;
+            clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+        }
+        .hero h3 {
+            font-size: 3.8rem;
+            margin-bottom: 1rem;
+            color: white;
+            text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;
+        }
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 600px;
+            margin: 1rem auto 2rem;
+            background-color: #99d88e;
+            padding: 1rem;
+            border-radius: 5px;
+        }
+        .cards {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: center;
+            min-height: 50vh;
+            background-image: url('GROUP 3/img/Pic2.jpg');
+            background-size: cover;
+            background-position: center;
+            color: #99d88e;
+            padding: 2rem;
+            animation: fadeIn 2s ease-in-out;
+            position: relative;
+            clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 90%);
+        }
+        .card {
+            background: rgba(153, 216, 142, 1);
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            width: 300px;
+            padding: 1.5rem;
+            margin: 1.5rem;
+            text-align: center;
+            color: #99d88e;
+            transition: transform 0.3s ease;
+        }
+        .card:hover {
+            transform: scale(1.05);
+        }
+        .card h4 {
+            color: #000000;
+            margin-bottom: 1rem;
+        }
+        .card p {
+            color: #000000;
+        }
+        footer {
+            text-align: center;
+            padding: 1rem 0;
+            background: #74a36b;
+            color: white;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        footer p {
+            margin: 0;
+        }
+        button {
+            padding: 0.8rem 1.5rem;
+            border: none;
+            border-radius: 5px;
+            background-color: #99d88e;
+            color: rgb(0, 0, 0);
+            cursor: pointer;
+            font-size: 1rem;
+            margin-top: 2rem;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+        button:hover {
+            background-color: #74a36b;
+            transform: scale(1.1);
+        }
+        .fade {
+            animation: fadeIn 2s ease-in-out;
+        }
+        .logo {
+            position: absolute;
+            top: 50%;
+            right: 5%;
+            transform: translateY(-50%);
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+    </style>
+    <link rel="icon" type="image/png" href="GROUP 3/img/icon.png">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="Index.html">Home</a>
+            <a href="About.html">About</a>
+            <a href="Programs.html">Programs</a>
+            <a href="Contact.html">Contact</a>
+            <a href="Donation.html">Get Involved</a>
+            <a href="Documentation.html">Video</a>
+
+        </nav>
+        <h1>A Community Outreach Program</h1>
+    </header>
+
+    <div class="hero fade">
+        <h3>Serving Smiles</h3>
+        <p>A day to bond! Come celebrate the efforts our canteen staff puts in every bite of our delicious food! 🍔🥤</p>
+        <button onclick="window.location.href='About.html';">Learn More</button>
+        <img src="GROUP 3/img/icon.png" alt="Logo" class="logo">
+    </div>
+
+    <section class="cards" id="about">
+        <div class="card">
+            <h4>About the Program</h4>
+            <p>The goal of this program is to recognize the amazing work and food that our canteen workers do everyday! 🌟</p>
+        </div>
+        <div class="card">
+            <h4>Why It Matters</h4>
+            <p>Their efforts often go unnoticed, let's change that by celebrating their contributions and hardwork! 🍳</p>
+        </div>
+        <div class="card">
+            <h4>Where Will It Be Held?</h4>
+            <p>This will be held in the MCMA, Marist School Marikina! 🏫</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Marist School | All Rights Reserved</p>
+    </footer>
+</body>
+</html>

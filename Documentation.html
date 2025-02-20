@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programs</title>
+    <style>
+        body {
+            font-family: 'Poppins', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e0f7fa;
+            color: #333;
+            overflow: auto;
+            background-image: url('GROUP 3/img/Pic7.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+        header {
+            background: #74a36b;
+            color: white;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.2rem;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            gap: 0.5rem;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 1rem;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        nav a:hover {
+            background-color: rgba(255, 255, 255, 0.3);
+        }
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+            height: calc(100vh - 200px);
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
+            align-items: center;
+        }
+        footer {
+            text-align: center;
+            padding: 1rem 0;
+            background: #74a36b;
+            color: white;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        footer p {
+            margin: 0;
+        }
+        .section-header {
+            text-align: center;
+            font-size: 2.5rem;
+            color: #000000;
+            margin-bottom: 10px;
+            background: rgba(166, 233, 153, 0.8);
+            padding: 10px 20px;
+            border-radius: 10px;
+            display: inline-block;
+            opacity: 0;
+            animation: fadeIn 2s ease-in-out forwards;
+        }
+        .spacer {
+            height: 300px;
+        }
+        iframe {
+            margin-top: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+    </style>
+    <link rel="icon" type="image/png" href="GROUP 3/img/icon.png">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="Index.html">Home</a>
+            <a href="About.html">About</a>
+            <a href="Programs.html">Programs</a>
+            <a href="Contact.html">Contact</a>
+            <a href="Donation.html">Get Involved</a>
+            <a href="Documentation.html">Video</a>
+        </nav>
+        <h1>A Community Outreach Program</h1>
+    </header>
+
+    <div class="container">
+        <h2 class="section-header">Our Documentation Video 📷</h2>
+        <iframe width="720" height="405" 
+            src="GROUP 3/img/Ligaya.mp4" 
+            title="Documentation Video"
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+        </iframe>
+
+    </div>
+
+    <div class="spacer"></div>
+
+    <footer>
+        <p>&copy; 2024 Marist School | All Rights Reserved</p>
+    </footer>
+</body>
+</html>

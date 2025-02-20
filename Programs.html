@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programs</title>
+    <style>
+        body {
+            font-family: 'Poppins', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e0f7fa;
+            color: #333;
+            overflow: auto;
+            background-image: url('GROUP 3/img/Pic4.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+        header {
+            background: #74a36b;
+            color: white;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.2rem;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            gap: 0.5rem;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 1rem;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        nav a:hover {
+            background-color: rgba(255, 255, 255, 0.3);
+        }
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+            height: calc(100vh - 200px);
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
+        }
+        .activity-card {
+            background: #a6e999;
+            margin-bottom: 20px;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            opacity: 0;
+            animation: fadeIn 2s ease-in-out forwards;
+        }   
+        .activity-card img {
+            flex: 1 1 150px;
+            max-width: 150px;
+            border-radius: 10px;
+            margin-right: 20px;
+        }
+        .activity-card div {
+            flex: 2 1;
+        }
+        .activity-card h2 {
+            margin: 0 0 10px;
+            font-size: 1.5rem;
+            color: #000000;
+        }
+        .activity-card p {
+            margin: 0;
+            font-size: 1rem;
+            color: #555;
+        }
+        footer {
+            text-align: center;
+            padding: 1rem 0;
+            background: #74a36b;
+            color: white;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        footer p {
+            margin: 0;
+        }
+        .section-header {
+            text-align: center;
+            font-size: 2.5rem;
+            color: #000000;
+            margin-bottom: 10px;
+            background: rgba(166, 233, 153, 0.8);
+            padding: 10px 20px;
+            border-radius: 10px;
+            display: inline-block;
+            opacity: 0;
+            animation: fadeIn 2s ease-in-out forwards;
+        }
+        .spacer {
+            height: 300px;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+    </style>
+    <link rel="icon" type="image/png" href="GROUP 3/img/icon.png">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="Index.html">Home</a>
+            <a href="About.html">About</a>
+            <a href="Programs.html">Programs</a>
+            <a href="Contact.html">Contact</a>
+            <a href="Donation.html">Get Involved</a>
+            <a href="Documentation.html">Video</a>
+
+        </nav>
+        <h1>A Community Outreach Program</h1>
+    </header>
+
+    <div class="container">
+        <h2 class="section-header">Our Activities 📚</h2>
+
+        <div class="activity-card">
+            <img src="GROUP 3/img/Wave.png" alt="Write">
+            <div>
+                <h2>Introduction</h2>
+                <p><strong>Activity:</strong> Getting to know each other </p>
+                <p><strong>Impact:</strong> To know their names, know what stall they work in, and overall just to get to know them a little bit!</p>
+            </div>
+        </div>
+
+        <div class="activity-card">
+            <img src="GROUP 3/img/Games.png" alt="Paint">
+            <div>
+                <h2>Games</h2>
+                <p><strong>Activity:</strong> Playing games like Musical Chairs and "Eh Ikaw Anong Ginagawa mo"</p>
+                <p><strong>Impact:</strong> A fun starter which can help us get energized and have a couple of laughs!</p>
+            </div>
+        </div>
+
+        <div class="activity-card">
+            <img src="GROUP 3/img/Talent.png" alt="Games">
+            <div>
+                <h2>Talent showcase</h2>
+                <p><strong>Activity:</strong> Showcasing your talents on stage </p>
+                <p><strong>Impact:</strong> A fun way to bond with our staff while also winning prizes and having a good time!</p>
+            </div>
+        </div>
+
+        <div class="activity-card">
+            <img src="GROUP 3/img/Eat.png" alt="Eat">
+            <div>
+                <h2>Food time!</h2>
+                <p><strong>Activity:</strong> Eating with them</p>
+                <p><strong>Impact:</strong> Eating together can provide us a closer bond with them! </p>
+            </div>
+        </div>
+
+        <div class="activity-card">
+            <img src="GROUP 3/img/Medal.png" alt="Medal">
+            <div>
+                <h2>Tokens of Appreciation</h2>
+                <p><strong>Activity:</strong> Giving them tokens of appreciation </p>
+                <p><strong>Impact:</strong> A way of saying thanks to them by giving them stuff like certificates for them to keep or things they can use like aprons!</p>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="spacer"></div>
+
+    <footer>
+        <p>&copy; 2024 Marist School | All Rights Reserved</p>
+    </footer>
+</body>
+</html>

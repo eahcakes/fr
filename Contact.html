@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <style>
+        body {
+            font-family: 'Poppins', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('GROUP 3/img/Pic5.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: #333;
+            animation: fadeBackground 3s ease-in-out forwards;
+            height: 100vh;
+            overflow: auto;
+        }
+
+        @keyframes fadeBackground {
+            from {
+                background-color: rgba(255, 255, 255, 0);
+            }
+            to {
+                background-color: rgba(255, 255, 255, 1);
+            }
+        }
+
+        header {
+            background: #74a36b;
+            color: white;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.2rem;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            gap: 0.5rem;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 1rem;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        nav a:hover {
+            background-color: rgba(255, 255, 255, 0.3);
+        }
+
+        .fade {
+            animation: fadeIn 2s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        .container {
+            max-width: 700px;
+            margin: 50px auto;
+            padding: 20px;
+            background: rgba(116, 163, 107, 1);
+            border-radius: 12px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+            border: 1px solid #000000;
+        }
+
+        .title-box {
+            text-align: center;
+            font-size: 1.8em;
+            color: #000000;
+            margin-bottom: 20px;
+            padding: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            background: #a6e999;
+            font-weight: bold;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        .contact-box {
+            padding: 20px;
+            border: 2px dashed #80b577;
+            border-radius: 8px;
+            background: #a6e999;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        .contact-label {
+            font-size: 1.2em;
+            color: #000000;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        .contact-detail {
+            font-size: 1em;
+            color: #555;
+            background: #f0f8ff;
+            padding: 10px;
+            border-radius: 6px;
+            box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .contact-detail.placeholder {
+            font-style: italic;
+            color: #3f3d3d;
+        }
+
+        .message-form {
+            margin-top: 20px;
+            padding: 15px;
+            border: 2px dashed #80b577;
+            border-radius: 8px;
+            background: #a6e999;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            flex-grow: 1;
+        }
+
+        .form-label {
+            font-size: 1em;
+            color: #000000;
+            font-weight: bold;
+        }
+
+        .form-input, .form-textarea {
+            font-size: 0.9em;
+            padding: 8px;
+            border-radius: 6px;
+            border: 1px solid #ccc;
+            background-color: #f0f8ff;
+            box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+            width: 100%;
+        }
+
+        .form-textarea {
+            resize: vertical;
+            min-height: 80px;
+        }
+
+        .form-button {
+            background-color: #80b577;
+            color: rgb(0, 0, 0);
+            padding: 8px 16px;
+            border-radius: 6px;
+            border: none;
+            font-size: 1em;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .form-button:hover {
+            background-color: #74a36b;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1rem 0;
+            background: #74a36b;
+            color: white;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        footer p {
+            margin: 0;
+        }
+
+        .spacer {
+            height: 80px;
+        }
+    </style>
+    <link rel="icon" type="image/png" href="GROUP 3/img/icon.png">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="Index.html">Home</a>
+            <a href="About.html">About</a>
+            <a href="Programs.html">Programs</a>
+            <a href="Contact.html">Contact</a>
+            <a href="Donation.html">Get Involved</a>
+            <a href="Documentation.html">Video</a>
+
+       </nav>
+        <h1>A Community Outreach Program</h1>
+    </header>
+    <div class="container fade">
+        <div class="title-box">Contact Us! 📞</div>
+        <div class="contact-box fade">
+            <div>
+                <div class="contact-label">Email:</div>
+                <div class="contact-detail placeholder">Lfdyecho@maristschool.edu.ph</div>
+            </div>
+            <div>
+                <div class="contact-label">Phone Number:</div>
+                <div class="contact-detail placeholder">+639688809823</div>
+            </div>
+        </div>
+
+        <div class="message-form">
+            <div>
+                <div class="form-label">Name:</div>
+                <input type="text" class="form-input" id="name" placeholder="Your Name">
+            </div>
+            <div>
+                <div class="form-label">Email:</div>
+                <input type="email" class="form-input" id="email" placeholder="Your Email">
+            </div>
+            <div>
+                <div class="form-label">Message:</div>
+                <textarea class="form-textarea" id="message" placeholder="Write your message"></textarea>
+            </div>
+            <button type="button" class="form-button" onclick="sendMessage()">Send Message</button>
+        </div>
+    </div>
+    <div class="spacer"></div>
+
+    <footer>
+        <p>&copy; 2024 Marist School | All Rights Reserved</p>
+    </footer>
+
+    <script>
+        function sendMessage() {
+            const name = document.getElementById("name").value.trim();
+            const email = document.getElementById("email").value.trim();
+            const message = document.getElementById("message").value.trim();
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+            if (!name) {
+                alert("Please enter your name.");
+                return;
+            }
+            if (!email || !emailRegex.test(email)) {
+                alert("Please enter a valid email address.");
+                return;
+            }
+            if (!message) {
+                alert("Please enter your message.");
+                return;
+            }
+
+            alert("Message Sent!");
+            document.getElementById("name").value = '';
+            document.getElementById("email").value = '';
+            document.getElementById("message").value = '';
+        }
+    </script>
+</body>
+</html>
